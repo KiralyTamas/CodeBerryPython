@@ -58,3 +58,13 @@ def print_circle(pi, sugar):
       print("A kör kerülete: "+str(calculate_circle_k(pi, sugar)))
       print("A kör területe: "+str(calculate_circle_t(pi, sugar)))
 print_circle(3.14, 5)
+dwarf_counter=1
+total_dwarf=7
+working_dwarf=4
+while dwarf_counter<=total_dwarf:
+      if dwarf_counter<=working_dwarf:
+            print('Az '+str(dwarf_counter)+'. számú törpe a bányában van.')
+            dwarf_counter+=1
+      else:
+            print('Az '+str(dwarf_counter)+'. számú törpe otthon alszik még.')
+            dwarf_counter+=1
