@@ -8,11 +8,11 @@ guest1_city = 'budapest'
 guest1_address = 'Fő utca 10.'
 guest1_email = 'bela.kovacs@pelda.hu'
 guest2_first_name = 'Arnold'
-guest2_last_name = 'szabó'
+guest2_last_name = 'Szabó'
 guest2_mobile_phone = '+36109876543'
 guest2_postal_code = '6500'
 guest2_city = 'Baja'
-guest2_address = 'Folyó u. 24.'
+guest2_address = 'Folyó utca 24.'
 guest2_email = 'arnold.szabo@example.com'
 
 def check_phone_number(phone_number):
@@ -59,3 +59,25 @@ def check_email_format(email):
 
 check_email_format(guest1_email)
 check_email_format(guest2_email)
+
+def correct_first_name(first_name):
+  print(first_name)
+  print(first_name.capitalize())
+def correct_last_name(last_name):
+  print(last_name)
+  print(last_name.capitalize())
+def correct_city(city):
+  print(city)
+  print(city.capitalize())
+def correct_address(address):
+  print(address)
+  print(address.replace('u.','utca'))
+
+correct_first_name(guest1_first_name)
+correct_last_name(guest1_last_name)
+correct_first_name(guest2_first_name)
+correct_last_name(guest2_last_name)
+correct_city(guest1_city)
+correct_city(guest2_city)
+correct_address(guest1_address)
+correct_address(guest2_address)
