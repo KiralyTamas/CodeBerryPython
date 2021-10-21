@@ -6,11 +6,56 @@ guest1_mobile_phone = '+36101234567'
 guest1_postal_code = '1017'
 guest1_city = 'budapest'
 guest1_address = 'Fő utca 10.'
-guest1_email = 'bela.kovacs@@pelda.hu'
+guest1_email = 'bela.kovacs@pelda.hu'
 guest2_first_name = 'Arnold'
 guest2_last_name = 'szabó'
-guest2_mobile_phone = '06109876543'
+guest2_mobile_phone = '+36109876543'
 guest2_postal_code = '6500'
 guest2_city = 'Baja'
 guest2_address = 'Folyó u. 24.'
 guest2_email = 'arnold.szabo@example.com'
+
+def check_phone_number(phone_number):
+  if len(phone_number)==12:
+    print("A telefonszám formátuma megfelel")
+  else:
+    print("A telefonszám formátuma nem felel meg")
+
+check_phone_number(guest1_mobile_phone)
+check_phone_number(guest2_mobile_phone)
+
+def check_postal_code(postal_code):
+  if len(postal_code)==4:
+    print("Az irányítószám magyar")
+  else:
+    print("Az irányítószám nem magyar")
+
+check_postal_code(guest1_postal_code)
+check_postal_code(guest2_postal_code)
+
+def check_phone_country(phone_country):
+  if phone_country.startswith("+36"):
+    print("A telefonszám formátuma magyar")
+  else:
+    print("A telefonszám formátuma nem magyar")
+
+check_phone_country(guest1_mobile_phone)
+check_phone_country(guest2_mobile_phone)
+
+def check_email_country(email_country):
+  if email_country.endswith(".hu"):
+    print("Ez az email cím magyar")
+  else:
+    print("Ez az email cím külföldi")
+
+check_email_country(guest1_email)
+check_email_country(guest2_email)
+
+def check_email_format(email):
+  if email.count('@')==1:
+    print("Az email cím formátuma megfelelő.")
+  else:
+    print("Az email cím formátuma nem megfelelő.")
+
+check_email_format(guest1_email)
+check_email_format(guest2_email)
