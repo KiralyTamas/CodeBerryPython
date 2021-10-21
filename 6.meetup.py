@@ -21,17 +21,11 @@ def check_phone_number(phone_number):
   else:
     print("A telefonszám formátuma nem felel meg")
 
-check_phone_number(guest1_mobile_phone)
-check_phone_number(guest2_mobile_phone)
-
 def check_postal_code(postal_code):
   if len(postal_code)==4:
     print("Az irányítószám magyar")
   else:
     print("Az irányítószám nem magyar")
-
-check_postal_code(guest1_postal_code)
-check_postal_code(guest2_postal_code)
 
 def check_phone_country(phone_country):
   if phone_country.startswith("+36"):
@@ -39,17 +33,11 @@ def check_phone_country(phone_country):
   else:
     print("A telefonszám formátuma nem magyar")
 
-check_phone_country(guest1_mobile_phone)
-check_phone_country(guest2_mobile_phone)
-
 def check_email_country(email_country):
   if email_country.endswith(".hu"):
     print("Ez az email cím magyar")
   else:
     print("Ez az email cím külföldi")
-
-check_email_country(guest1_email)
-check_email_country(guest2_email)
 
 def check_email_format(email):
   if email.count('@')==1:
@@ -57,18 +45,18 @@ def check_email_format(email):
   else:
     print("Az email cím formátuma nem megfelelő.")
 
-check_email_format(guest1_email)
-check_email_format(guest2_email)
-
 def correct_first_name(first_name):
   print(first_name)
   print(first_name.capitalize())
+
 def correct_last_name(last_name):
   print(last_name)
   print(last_name.capitalize())
+
 def correct_city(city):
   print(city)
   print(city.capitalize())
+
 def correct_address(address):
   print(address)
   print(address.replace('u.','utca'))
@@ -81,3 +69,13 @@ correct_city(guest1_city)
 correct_city(guest2_city)
 correct_address(guest1_address)
 correct_address(guest2_address)
+check_phone_number(guest1_mobile_phone)
+check_phone_number(guest2_mobile_phone)
+check_postal_code(guest1_postal_code)
+check_postal_code(guest2_postal_code)
+check_phone_country(guest1_mobile_phone)
+check_phone_country(guest2_mobile_phone)
+check_email_country(guest1_email)
+check_email_country(guest2_email)
+check_email_format(guest1_email)
+check_email_format(guest2_email)
