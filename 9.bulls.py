@@ -37,6 +37,10 @@ def transfer_player(our_team,rival_team,player_index):
   print(our_team)
   print(rival_team)
 
+def print_players_names(list):
+  for players in list:
+    print(players)
+
 get_middle_people(favorite_team)
 remove_injured_players(1)
 remove_injured_players(3)
@@ -46,3 +50,4 @@ add_captain(favorite_team)
 remove_player(favorite_team, "Hopson Dennis")
 del_player(favorite_team)
 transfer_player(favorite_team,los_angeles_lakers,3)
+print_players_names(favorite_team)
