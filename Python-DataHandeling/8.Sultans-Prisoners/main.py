@@ -7,7 +7,7 @@ def free_prisoner():
   prisoners_content=csv.reader(prison)
   for number in prisoners_content:
     prisoners.append(number)
-  for number in range(1,1000,1):
+  for number in range(1,len(prisoners)):
     for klick in prisoners:
       if int(klick[0])%number==0:
         if int(klick[1])==0:
