@@ -4,8 +4,8 @@ import csv
 old = "json"
 new = "csv"
 data = []
-path = "fixtures/fixturesbundesliga.json"
-#path=input("Mi a konvertálandó fájl útvonala: ")
+#path = "fixtures/fixturesbundesliga.json"
+path=input("Mi a konvertálandó fájl útvonala: ")
 source = open(path, "r")
 data = json.load(source)
 source.close()
@@ -34,6 +34,5 @@ def convert_header(data, delim):
                 for j in number[i]:
                     content.append(str(number[i][j]))
           csv_file.writerow(content)
-
 
 convert_header(data, "_")
